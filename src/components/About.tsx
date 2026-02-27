@@ -1,5 +1,5 @@
+import profileImage from "@/assets/profile.png";
 import { Card } from "@/components/ui/card";
-import profileImage from "@/assets/profile-placeholder.jpg";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const About = () => {
@@ -31,22 +31,23 @@ const About = () => {
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
-                Junior Software Engineer
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+                Full-Stack Software Engineer
               </h3>
               <p className="text-foreground/80 leading-relaxed">
-                Junior Software Engineer with experience in Flutter mobile development, 
-                seeking to leverage my expertise in building cross-platform applications 
-                to transition into a full-time role specializing in React and modern web 
-                technologies.
+                Full-Stack Software Engineer with strong experience in web
+                application development and cross-platform solutions. Proven
+                ability to design, develop, and deploy scalable applications
+                across mobile and web environments.
               </p>
             </div>
 
             <div>
               <p className="text-foreground/80 leading-relaxed">
-                Eager to contribute to a dynamic team while expanding my skills in a 
-                challenging and growth-oriented environment. I bring a passion for 
-                clean code, user-centered design, and continuous learning.
+                Eager to contribute to a dynamic team while expanding my skills
+                in a challenging and growth-oriented environment. I bring a
+                passion for clean code, user-centered design, and continuous
+                learning.
               </p>
             </div>
 
