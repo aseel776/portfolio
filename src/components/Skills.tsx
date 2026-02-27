@@ -6,47 +6,72 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 const Skills = () => {
   const { ref, isVisible } = useScrollAnimation();
 
-  const technicalSkills = [{
-    category: "Programming Languages",
-    icon: Code2,
-    items: ["Java", "Dart", "JavaScript", "Python"]
-  }, {
-    category: "Frameworks & Libraries",
-    icon: Globe,
-    items: ["Flutter", "React.js", "Flask", "Material UI"]
-  }, {
-    category: "State Management",
-    icon: Smartphone,
-    items: ["Riverpod", "BLoC", "Cubit", "GetX"]
-  }, {
-    category: "Other Technologies",
-    icon: Database,
-    items: ["WebRTC", "GraphQL", "SQL", "Firebase", "Socket.IO", "Three.js"]
-  }, {
+const technicalSkills = [
+  {
     category: "Tools & Concepts",
     icon: Wrench,
-    items: ["Git & Git Flow", "Jira", "OOP", "Design Patterns", "Systems Analysis"]
-  }];
+    items: [
+      "Git & Git Flow",
+      "Linux",
+      "Bash Scripting",
+      "Jira",
+      "OOP",
+      "AOP",
+      "Design Patterns",
+      "Atoms Design System",
+      "ANTLR",
+    ],
+  },
+  {
+    category: "Frontend",
+    icon: Globe,
+    items: [
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "React.js",
+      "Ant Design",
+      "Material UI",
+      "Three.js",
+      "Redux & Redux Toolkit",
+      "React Query",
+    ],
+  },
+  {
+    category: "Backend",
+    icon: Database,
+    items: [
+      "Node.js",
+      "Nest.js",
+      "Flask",
+      "Socket.IO",
+      "WebRTC",
+      "GraphQL",
+      "SQL",
+      "Oracle Database",
+      "Firebase",
+    ],
+  },
+  {
+    category: "Programming Languages",
+    icon: Code2,
+    items: ["JavaScript", "TypeScript", "Dart", "Python", "Java"],
+  },
+  {
+    category: "Flutter & State Management",
+    icon: Smartphone,
+    items: ["Flutter", "Riverpod", "BLoC", "Cubit", "GetX"],
+  },
+];
 
-  const softSkills = [{
-    name: "Organizing & Planning",
-    icon: Target
-  }, {
-    name: "Problem Solving",
-    icon: Lightbulb
-  }, {
-    name: "Communication",
-    icon: MessageSquare
-  }, {
-    name: "Adaptability",
-    icon: Wrench
-  }, {
-    name: "Teamwork",
-    icon: Users
-  }, {
-    name: "Fluent in English",
-    icon: Languages
-  }];
+const softSkills = [
+  { name: "Organizing & Planning", icon: Target },
+  { name: "Problem Solving", icon: Lightbulb },
+  { name: "Communication", icon: MessageSquare },
+  { name: "Adaptability", icon: Wrench },
+  { name: "Teamwork", icon: Users },
+  { name: "Fluent in English", icon: Languages },
+];
 
   return (
     <section id="skills" className="py-20">
@@ -67,9 +92,8 @@ const Skills = () => {
           {/* Technical Skills */}
           <div>
             <h3 className="text-2xl font-bold mb-6 inline-flex items-center gap-2 border-2 border-primary/30 text-primary px-5 py-2 rounded-full bg-primary/5">
-              <Code2 className="h-5 w-5" />
               Technical Skills
-              <Sparkles className="h-4 w-4 text-accent" />
+              <Code2 className="h-5 w-5" />
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {technicalSkills.map(skill => {
@@ -98,7 +122,6 @@ const Skills = () => {
           {/* Soft Skills */}
           <div>
             <h3 className="text-2xl font-bold mb-6 inline-flex items-center gap-2 border-2 border-accent/30 text-accent px-5 py-2 rounded-full bg-accent/5">
-              <Users className="h-5 w-5" />
               Soft Skills
               <Sparkles className="h-4 w-4 text-primary" />
             </h3>
